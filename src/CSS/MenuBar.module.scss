@@ -1,0 +1,32 @@
+#MenuBar{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.5s;
+    position: fixed;
+    top:0;
+}
+#MenuBar>Button{
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+    margin-left:90%;
+}
+#MenuBar>div{
+    text-align: start;
+    margin-left: 20px;
+    display: grid;
+    height: 80%;
+}
+.NavLink{
+    height: 30px;
+    text-decoration:none;
+    color:gray;
+    text-align: start;
+}
+.ActiveNavLink{
+    height: 30px;
+    text-decoration:none;
+    color:black ;
+    text-align: start;  
+}

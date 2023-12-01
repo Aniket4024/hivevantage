@@ -1,0 +1,184 @@
+#Home{
+    margin-top: 70px;
+}
+
+#HS1{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#HS1>div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../Media/Hero.jpg");
+    height: 100%;
+    width: 100%;
+}
+#HeroContent{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#HeroContent>img{
+    width: 400px;
+    margin-top: 120px;
+    transition: all 0.5s;
+}
+#HeroContent>hr{
+    width: 450px;
+    transition: all 0.5s;
+}
+#HeroContent>h2{
+    margin: 0;
+    transition: all 0.5s;
+}
+#HeroContent>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 70px;
+    border: 0px;
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#HeroContent>button:hover{
+    height: 45px;
+    width: 155px;
+}
+
+#HS2{
+    height: 800px;
+    width: 100%;
+    // background-color: pink;
+    position: absolute;
+    transition: all 0.5s;
+
+}
+
+#HS2>h1{
+    margin:100px auto 0px auto;
+    font-size: 50px;
+    
+}
+#HS2>hr{
+    width: 700px;
+    background-color: black;
+    height: 2px;
+    border: 0px;
+    transition: all 0.5s;
+
+}
+#HS2>p{
+    width: 690px;
+    margin: auto;
+    font-size: 13px;
+    transition: all 0.5s;
+
+}
+
+#ServicesCardList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    // background-color: red;
+    width: 85%;
+    margin: 80px auto 50px auto;
+    gap: 20px;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+@media screen and (max-width:1100px) {
+    #ServicesCardList{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #ServicesCardList{
+        height: 850px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #HS2{
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #ServicesCardList{
+        height: 1250px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #HS2{
+        height: 1700px;
+    }
+    #HS2>hr{
+        width: 500px;
+    }
+    #HS2>p{
+        width: 490px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #HS2>hr{
+        width: 320px;
+    }
+    #HS2>p{
+        width: 310px;
+    }
+    #HeroContent>img{
+        width: 250px;
+        margin-top: 120px;
+    }
+    #HeroContent>hr{
+        width: 300px;
+    }
+    #HeroContent>h2{
+        font-size: 18px;
+    }
+    #ServicesCardList{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:330px) {
+    #HS2>h1{
+        font-size: 35px;
+    }
+    #HS2>hr{
+        width: 250px;
+    }
+    #HS2>p{
+        width: 210px;
+    }
+    #HeroContent>img{
+        width: 200px;
+        margin-top: 120px;
+    }
+    #HeroContent>hr{
+        width: 250px;
+    }
+    #HeroContent>h2{
+        font-size: 14px;
+    }
+    #ServicesCardList{
+        height: 1150px;
+    }
+}

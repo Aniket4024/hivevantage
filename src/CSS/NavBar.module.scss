@@ -1,0 +1,123 @@
+#NavBar{
+    height: 70px;
+    width: 100%;
+    border-bottom: 2px solid rgb(219, 219, 219);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+
+#NS1{
+    width:200px;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    img{
+        width: 150px;
+        cursor: pointer;
+    }
+}
+
+#NS2{
+    width:500px;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    transition: all 0.5s;
+}
+.NavLink{
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+    // border: 1px solid green;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ActiveNavLink{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;   
+}
+.NavLink>div{
+    width: 0%;
+}
+.NavLink:hover{
+    padding-top: 1.5px;
+    div{
+        width: 100%;
+        background-color: gray;
+        height: 2px;
+        transition: width 1s;
+    }
+}
+
+
+#NavMenu{
+    // display: ;
+    height: 50%;
+    width: 50px;
+    background-color: transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    font-size:30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+
+    #NavBar{
+        justify-content: space-between;
+    
+    }
+    #NS2{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #NS2{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #NS2{
+        display: none;
+    }
+    #NavMenu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #NS1{
+        width:120px;
+    
+        img{
+            width: 100px;
+            transition: all 0.5s;
+        }
+    }
+}
