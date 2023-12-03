@@ -29,20 +29,22 @@ const Footer = ()=>{
             <div id={style.FS1C2}>
                 <h3>Address</h3>
                 <p>
-                    Plot No. 27, Narayan Nagar,
+                    3rd floor, Bama Complex
                     <br />
-                    Near Ambedkar Bhavan, Karol Bagh,
+                    Ram Nagar South, Madipakkam
                     <br />
-                    New Delhi - 440056
+                    Chennai, Tamil Nadu
+                    <br />
+                    - 600091
                 </p>
             </div>
             <div id={style.FS1C3}>
                 <h3>Contact</h3>
                 <hr />
                 <p>
-                    +91-9036726829
+                    +91-6380820205
                     <br />
-                    contact@hivevantage.com
+                    info@hivevantage.org
                 </p>
                 <button onClick={()=>navigate("/contact")}>
                     Contact Us

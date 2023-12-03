@@ -1,0 +1,149 @@
+#Services{
+    margin-top: 150px;
+    width: 100%;
+}
+#SS2{
+    height: 1200px;
+    width: 90%;
+    // background-color: rgb(255, 241, 159);
+    margin:100px auto;
+    text-align: start;
+
+    h1{
+        margin:20px 0px 0px 0px;
+    }
+    hr{
+        margin:5px 0px 3px 0px;
+        width: 400px;
+        border:1px solid rgb(255, 0, 0);
+    }
+    p{
+        margin: 0px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    ul{
+        margin: 30px 0px;
+    }
+}
+
+#SS2S1{
+    height: 350px;
+    width: 100%;
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s;
+    }
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#SS2S1:hover{
+    div{
+        background-position-x: left;
+    }
+}
+#SS2S1>div:nth-child(1){
+    width: 45%;
+    height: 100%;
+    background-image: url("../Media/websiteService.jpg");
+    border-radius: 20px;
+}
+#SS2S1>div:nth-child(2){
+    width: 50%;
+}
+#SS2S2{
+    height: 350px;
+    width: 100%;
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    div{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s;
+    }
+    cursor: pointer;
+    hr{
+        width: 90%
+    }
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#SS2S2>div:nth-child(1){
+    width: 45%;
+    height: 100%;
+    background-image: url("../Media/SoftwareService.jpg");
+    border-radius: 20px;
+}
+#SS2S2>div:nth-child(2){
+    width: 50%;
+}
+#SS2S2:hover{
+    div{
+        background-position-y: top;
+    }
+}
+#SS2S3{
+    height: 350px;
+    width: 100%;
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s;
+    }
+    cursor: pointer;
+    hr{
+        width: 450px;
+    }
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#SS2S3>div:nth-child(1){
+    width: 45%;
+    height: 100%;
+    background-image: url("../Media/MarketingService.jpg");
+    border-radius: 20px;
+}
+#SS2S3>div:nth-child(2){
+    width: 50%;
+}
+#SS2S3:hover{
+    div{
+        background-position-x: left;
+    }
+}
+
+
+
+@media screen and (max-width:1050px) {
+    #SS2S1{
+        hr{
+            width: 90%
+        }
+    }
+    #SS2S2{
+        hr{
+            width: 90%
+        }
+    }
+    #SS2S3{
+        hr{
+            width: 95%
+        }
+    }
+}

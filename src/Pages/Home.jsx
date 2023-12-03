@@ -220,7 +220,7 @@ const Home = ()=>{
                     </li>
                 </ol>
             </div>
-            <button>
+            <button onClick={()=>Navigate("/contact")}>
                 Contact Us
                 <IoCaretForwardOutline style={{marginTop:"-1px"}}/>
             </button>
