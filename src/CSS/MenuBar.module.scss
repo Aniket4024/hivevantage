@@ -5,6 +5,7 @@
     transition: all 0.5s;
     position: fixed;
     top:0;
+    z-index: 6;
 }
 #MenuBar>Button{
     background-color: transparent;
