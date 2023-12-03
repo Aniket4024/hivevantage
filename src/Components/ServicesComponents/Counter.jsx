@@ -8,14 +8,14 @@ import { Content } from 'antd/es/layout/layout';
 const formatter = (value) => <CountUp end={value} separator="," />;
 
 const Counter = () => (
-  <Row gutter={16} id={style.Counter}>
-    <Col span={5}>
+  <Row id={style.Counter}>
+    <Col className={style.Col} id={style.Col1} >
       <Statistic title="Experience" value={38} precision={2} formatter={formatter} valueStyle={{fontSize:"60px",color:"gray"}} />
     </Col>
-    <Col span={5}>
+    <Col className={style.Col} id={style.Col2} >
       <Statistic title="Projects"  value={53243} precision={2} formatter={formatter} valueStyle={{fontSize:"60px",color:"gray"}} />
     </Col>
-    <Col span={5}>
+    <Col className={style.Col} id={style.Col3} >
       <Statistic title="Happy Cintes" value={53143} precision={2} formatter={formatter} valueStyle={{fontSize:"60px",color:"gray"}} />
     </Col>
   </Row>

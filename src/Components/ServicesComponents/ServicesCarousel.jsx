@@ -101,34 +101,154 @@ const Data = [
 
 
 const ServicesCarousel = ()=>{
-    return <Splide 
-        aria-label="My Favorite Images" 
-        options={ {
-        rewind: true,
-        gap   : '0px',
-        type   : 'loop',
-        perPage: 5,
-        perMove: 1,
-        pagination:false ,
-        autoplay:true,
-        speed:500,
-        }}
-        id={style.ServicesCarousel}
-    >
-        {
-            Data.map((e)=>{
-                return <SplideSlide className={style.Slide} key={e.id}>
-                <div style={{
-                    backgroundImage:`url(${e.image})`
-                }}>
-                  <div>
-                    {e.text}
-                  </div>
-                </div>
-              </SplideSlide>
-            })
-        }
-  </Splide>
+    return <>
+    
+        <Splide 
+            aria-label="My Favorite Images" 
+            options={ {
+            rewind: true,
+            gap   : '0px',
+            type   : 'loop',
+            perPage: 5,
+            perMove: 1,
+            pagination:false ,
+            autoplay:true,
+            speed:500,
+            }}
+            id={style.ServicesCarousel}
+        >
+            {
+                Data.map((e)=>{
+                    return <SplideSlide className={style.Slide} key={e.id}>
+                        <div style={{
+                            backgroundImage:`url(${e.image})`
+                        }}>
+                        <div>
+                            {e.text}
+                        </div>
+                        </div>
+                    </SplideSlide>
+                })
+            }
+        </Splide>
+
+
+
+        <Splide 
+            aria-label="My Favorite Images" 
+            options={ {
+            rewind: true,
+            gap   : '0px',
+            type   : 'loop',
+            perPage: 4,
+            perMove: 1,
+            pagination:false ,
+            autoplay:true,
+            speed:500,
+            }}
+            id={style.ServicesCarousel2}
+        >
+            {
+                Data.map((e)=>{
+                    return <SplideSlide className={style.Slide} key={e.id}>
+                        <div style={{
+                            backgroundImage:`url(${e.image})`
+                        }}>
+                        <div>
+                            {e.text}
+                        </div>
+                        </div>
+                    </SplideSlide>
+                })
+            }
+        </Splide>
+
+
+        <Splide 
+            aria-label="My Favorite Images" 
+            options={ {
+            rewind: true,
+            gap   : '0px',
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+            pagination:false ,
+            autoplay:true,
+            speed:500,
+            }}
+            id={style.ServicesCarousel3}
+        >
+            {
+                Data.map((e)=>{
+                    return <SplideSlide className={style.Slide} key={e.id}>
+                        <div style={{
+                            backgroundImage:`url(${e.image})`
+                        }}>
+                        <div>
+                            {e.text}
+                        </div>
+                        </div>
+                    </SplideSlide>
+                })
+            }
+        </Splide>
+        <Splide 
+            aria-label="My Favorite Images" 
+            options={ {
+            rewind: true,
+            gap   : '0px',
+            type   : 'loop',
+            perPage: 2,
+            perMove: 1,
+            pagination:false ,
+            autoplay:true,
+            speed:500,
+            }}
+            id={style.ServicesCarousel4}
+        >
+            {
+                Data.map((e)=>{
+                    return <SplideSlide className={style.Slide} key={e.id}>
+                        <div style={{
+                            backgroundImage:`url(${e.image})`
+                        }}>
+                        <div>
+                            {e.text}
+                        </div>
+                        </div>
+                    </SplideSlide>
+                })
+            }
+        </Splide>
+        <Splide 
+            aria-label="My Favorite Images" 
+            options={ {
+            rewind: true,
+            gap   : '0px',
+            type   : 'loop',
+            perPage: 1,
+            perMove: 1,
+            pagination:false ,
+            autoplay:true,
+            speed:500,
+            }}
+            id={style.ServicesCarousel5}
+        >
+            {
+                Data.map((e)=>{
+                    return <SplideSlide className={style.Slide} key={e.id}>
+                        <div style={{
+                            backgroundImage:`url(${e.image})`
+                        }}>
+                        <div>
+                            {e.text}
+                        </div>
+                        </div>
+                    </SplideSlide>
+                })
+            }
+        </Splide>
+    </>
 }
 
 export default ServicesCarousel;
