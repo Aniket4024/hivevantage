@@ -10,7 +10,7 @@ import Loading from "../Components/Loading";
 const Home = React.lazy(() => {
     return Promise.all([
       import("../Pages/Home"),
-      new Promise(resolve => setTimeout(resolve, 700))
+      new Promise(resolve => setTimeout(resolve, 1000))
     ])
     .then(([moduleExports]) => moduleExports);
   });
